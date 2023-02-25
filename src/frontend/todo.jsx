@@ -12,7 +12,7 @@ export default function todo() {
   function addToDo() {
     if (enteredTitle !== "" && enteredDesc !=="") {
       let currentTodo = {
-        taskID:lastTaskID,
+        taskID:lastTaskID+1,
         taskHeader: enteredTitle,
         taskContent: enteredDesc,
         taskDate: new Date().toLocaleDateString(),
@@ -39,7 +39,7 @@ export default function todo() {
       setToDo((todos) => todos.concat(currentTodo));
       setenteredTitle("");
       setenteredDesc("");
-      setlastTaskID(lastTaskID+1)
+      setlastTaskID(currentTodo.taskID)
       toast("ToDo added Successfully", {
         position: toast.POSITION.TOP_RIGHT,
         theme: "light",
@@ -56,15 +56,6 @@ export default function todo() {
     <div className="mainHeader">
       <div className="newForm">
       <h2>Manish's ToDo</h2>
-      <ul>
-        {todo.map((eachToDo) => {
-          return (
-            <li>
-              {eachToDo.content} - {eachToDo.date}
-            </li>
-          );
-        })}
-      </ul>
       <div className="newForm-inputs">
         <input
           type="text"
