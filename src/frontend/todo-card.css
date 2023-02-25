@@ -1,9 +1,10 @@
-.todoCards{
-    display:flex;  
+.todoCards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.individual-card{
-    margin:20px 20px 20px 20px;
-    width: 20em;
-    
+.individual-card {
+  margin: 20px 20px 20px 20px;
+  width: 20em;
+  height: 20em;
 }
