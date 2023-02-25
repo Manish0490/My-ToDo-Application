@@ -6,7 +6,6 @@ import "./todo.css";
 import TodoCard from "./todo-card";
 export default function todo() {
   const [lastTaskID,setlastTaskID] = useState(2)
-  const [todo, setToDo] = useState([]);
   const [enteredTitle, setenteredTitle] = useState("");
   const [enteredDesc,setenteredDesc] = useState("");
   function addToDo() {
@@ -36,7 +35,7 @@ export default function todo() {
          });
 
       //Local Data Storage
-      setToDo((todos) => todos.concat(currentTodo));
+      // setToDo((todos) => todos.concat(currentTodo));
       setenteredTitle("");
       setenteredDesc("");
       setlastTaskID(currentTodo.taskID)
