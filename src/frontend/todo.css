@@ -1,0 +1,45 @@
+.todo-container {
+  position: absolute;
+  top: 5vh;
+}
+
+.todo-title {
+  height: 2.5rem;
+  width: 30rem;
+  border-radius: 8px;
+  margin: 0 0 0 0;
+  padding: 0;
+  border-color: black;
+  display: flex;
+  border-width: 2px;
+  margin: 0 0 15px 0;
+}
+
+.addToDo {
+  height: 2.5rem;
+  border-radius: 10px;
+  background: linear-gradient(to right bottom, pink, blue);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color: white;
+}
+
+.newForm {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newForm-inputs>input{
+  margin: 10px;
+  display: grid;
+  justify-content: space-around;
+}
+
+.newForm>h2{
+  margin: 0;
+}
+
+.todoHolder{
+  margin: 20px 20px 20px 20px;
+}

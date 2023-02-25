@@ -1,0 +1,9 @@
+.todoCards{
+    display:flex;  
+}
+
+.individual-card{
+    margin:20px 20px 20px 20px;
+    width: 20em;
+    
+}
